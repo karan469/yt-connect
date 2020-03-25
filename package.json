@@ -1,16 +1,16 @@
 {
-  "name": "vynchronize",
+  "name": "yt-connect",
   "version": "1.0.0",
   "description": "Video synchronization app",
   "main": "server.js",
   "scripts": {
-    "test": "jshint test.js"
+    "test": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyle8998/Vynchronize.git"
+    "url": "git+https://github.com/CRekkaran/yt-connect.git"
   },
-  "author": "Kyle Lim",
+  "author": "Karan Tanwar",
   "license": "ISC",
   "dependencies": {
     "dotenv": "8.1.0",
@@ -20,9 +20,9 @@
     "ws": ">=3.3.1"
   },
   "bugs": {
-    "url": "https://github.com/kyle8998/Vynchronize/issues"
+    "url": "https://github.com/CRekkaran/yt-connect/issues"
   },
-  "homepage": "https://github.com/kyle8998/Vynchronize#readme",
+  "homepage": "https://github.com/CRekkaran/yt-connect#readme",
   "devDependencies": {
     "jshint": "^2.9.5"
   }
