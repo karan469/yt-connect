@@ -15,6 +15,8 @@ function onYouTubeIframeAPIReady() {
             rel: 0,
             controls: 1
         },
+        width: '800',
+        height: '450',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
