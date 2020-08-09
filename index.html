@@ -20,7 +20,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>yt-connect</title>
+    <title>yt-connect by Karan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
 <body class="bg-light" id="Home">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#Home"><img src="img/logo.png" alt="yt-connect logo" height="40" width="40"> yt-connect</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,12 +73,17 @@
                         <a id="contact-nav" class="nav-link js-scroll-trigger hide" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/karan-tanwar-8a04bb145/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://www.facebook.com/tkaran4">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://www.github.com/Crekkaran">
+                        <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://www.github.com/karan469">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
@@ -98,9 +103,13 @@
         <div id="userFormArea" class="row">
             <div class="col-md-12">
                 <!-- ADD DESCRIPTION HERE -->
-                <h2>Welcome to yt-connect</h2>
-                <p class="lead">The synchronous platform to watch awesome stuff with your friends!</p>
-                <hr style="height:20pt; visibility:hidden;" />
+                <blockquote class="blockquote">
+                  <h2>Welcome to yt-connect 🍿</h2>
+                  <footer class="blockquote-footer">A synchronous platform to watch awesome stuff with your friends!</footer>
+                </blockquote>
+                <!-- <p class="lead">A synchronous platform to watch awesome stuff with your friends!</p> -->
+                <!-- <p class="lead">Wanna know more about me? Contact me at <a href="https://www.linkedin.com/in/karan-tanwar-8a04bb145/">Linkedin</a> </p> -->
+                <!-- <hr style="height:10pt; visibility:hidden;" /> -->
 
                 <h2> Join a Room! </h2>
                 <form id="userForm">
@@ -110,13 +119,13 @@
                         <input class="form-control" id="username" />
                         <br />
                         <p style="color:red; margin-bottom: 0px" id="missinginfo2"></p>
-                        <label>Enter Room ID (Default 1)</label>
+                        <label>Join/Enter Room ID (Default 1)</label>
                         <button type="button" onClick="randomroom()" class="btn btn-primary random">Random</button>
                         <br/>
                         <input class="form-control" id="roomnum" />
                         <br/>
 
-                        <input style="margin-top: 10px;" type="submit" class="btn btn-primary" value="Enter" />
+                        <input style="margin-top: 10px;" type="submit" class="btn btn-outline-success btn-lg" value="Enter" />
                         <hr style="height:65pt; visibility:hidden;" />
                     </div>
                 </form>
@@ -173,15 +182,15 @@
                     <!----------------------------------- PLAYER AREA ----------------------------------->
                     <!-- <hr> -->
                     <div>
-                        <button id="playButton" onclick="playVideo(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause</button>
+                        <button id="playButton" onclick="playVideo(roomnum)" style="margin-top:.5rem" class="btn btn-outline-primary"><i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause</button>
 
-                        <button id="syncbutton" onclick="syncVideo(roomnum);syncAlert()" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-sync"></i> Sync</button>
+                        <button id="syncbutton" onclick="syncVideo(roomnum);syncAlert()" style="margin-top:.5rem" class="btn btn-outline-primary"><i class="fa fa-sync"></i> Sync</button>
 
                         <button id="loveButton" onclick="loveLive(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="far fa-heart"></i> Random K-pop</button>
                         <!-- <br/> -->
                         <button id="hostbutton" onclick="changeHost(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fas fa-users"></i> Make me the host!</button>
                         <!-- Turn off the lights -->
-                        <button id="lightButton" style="margin-top:.5rem" class="btn btn-primary switch"><i style="pointer-events:none;" class="fas fa-lightbulb"></i></button>
+                        <button id="lightButton" style="margin-top:.5rem" class="btn btn-outline-warning switch"><i style="pointer-events:none;" class="fas fa-lightbulb"></i></button>
                     </div>
 
                     <!-- Div for lights off! -->
@@ -190,7 +199,7 @@
                     <div class="topbotmargins">
                         <input type="Video" style="max-width: 200px; margin-right: .5rem; margin-bottom: .5rem; float: left;" class="form-control" id="inputVideoId" placeholder="Video ID / URL">
                         <button id="enqueueButton" onclick="enqueueVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-plus"></i> Add to Queue</button>
-                        <button id="emptyButton" onclick="emptyQueue(roomnum)" class="btn btn-primary"><i class="fas fa-trash"></i> Empty Queue</button>
+                        <button id="emptyButton" onclick="emptyQueue(roomnum)" class="btn btn-outline-danger"><i class="fas fa-trash"></i> Empty Queue</button>
                     </div>
                     <div>
                         <button id="changeButton" onclick="changeVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Change Video</button>
@@ -339,17 +348,17 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer id="footer" class="py-5 bg-dark footer">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; yt-connect 2020 | Karan Tanwar</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <!-- <footer id="footer" class="py-5 bg-dark footer"> -->
+    <!-- <footer id="footer" class="py-5 bg-light footer"> -->
+        <!-- <div class="container"> -->
+            <!-- <p class="m-0 text-center text-white">Copyright &copy; yt-connect 2020 | Karan Tanwar</p> -->
+        <!-- </div> -->
+    <!-- </footer> -->
 
     <script>
         var socket = io.connect();
         var roomnum = 1
-        var id = "M7lc1UVf-VE"
+        var id = "mb-XCaA2HZs"
         var username = ""
         // Don't allow trailing or leading whitespace!
         var nosymbols = new RegExp("^(([a-zA-Z0-9_-][a-zA-Z0-9 _-]*[a-zA-Z0-9_-])|([a-zA-Z0-9_-]*))$");
@@ -461,7 +470,7 @@
                             $roomArea.show();
 
                             // Move footer to correct position
-                            document.getElementById('footer').style.position = 'relative';
+                            // document.getElementById('footer').style.position = 'relative';
 
                             // Show header buttons!
                             document.getElementById('chat-nav').style.display = 'block';
